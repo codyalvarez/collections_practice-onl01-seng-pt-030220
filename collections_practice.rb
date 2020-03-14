@@ -34,10 +34,8 @@ def sum_array(array)
 end
 
 def add_s(array)
-  new_array = array.map do |word|
-    if word[-1] != "s"
-     word.concat("s")
-   else
-   end
-   end
+  array.each_with_index do |element, array|
+    element[element.length] = "s" unless index == 1
+  end
+
 end
